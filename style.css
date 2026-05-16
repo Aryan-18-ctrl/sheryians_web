@@ -513,30 +513,45 @@ display: flex;
 }
 
 /* moving text div */
+/* moving text div */
 
 .movingtextdiv{
+    width: 100%;
+    overflow: hidden;
+    margin-top: 120px;
+    padding: 20px 0;
+    position: relative;
+}
+
+.imagediv{
     display: flex;
     align-items: center;
-    overflow: hidden;
-    background: rgba(0, 0, 0, 0);
-    padding:10px  50px;
-    white-space: nowrap;
-    margin-top:150px;
+    justify-content: center;
+    gap: 50px;
+background: rgba(0, 0, 0, 0);
+    width: max-content;
+
+    animation: marquee 30s linear infinite;
 }
 
-.movingtextdiv .imagediv{
-    animation: move 10s linear infinite;
+/* IMPORTANT */
+.imagediv img{
+    width:1850px;
+    height: 80px;
+    object-fit: contain;
+
+    flex-shrink: 0;
 }
 
-@keyframes move {
+/* animation */
+@keyframes marquee{
     from{
         transform: translateX(0);
     }
     to{
-        transform: translateX(-100%);
+        transform: translateX(-50%);
     }
 }
-
 
 .impact-card{
     width:100%;
@@ -704,6 +719,13 @@ grid-template-areas:
     font-size: 38px;
 
 }
+.imagediv img{
+    width:1800px;
+    height: 80px;
+    object-fit: contain;
+
+    flex-shrink: 0;
+}
 
 
 }
@@ -719,7 +741,7 @@ grid-template-areas:
     display: block;
    }
    .hero-content{
-            padding:0 20px 0 20px;
+            padding:10px 20px   10px 20px;
 
    }
  .hero-content  h1{
@@ -744,6 +766,13 @@ font-size: 40px;
    }
 
 
+   .imagediv img{
+    width:1600px;
+    height: 80px;
+    object-fit: contain;
+
+    flex-shrink: 0;
+}
 
 
     
@@ -818,6 +847,13 @@ header {
 
 
 }
+.imagediv img{
+    width:1500px;
+    height: 80px;
+    object-fit: contain;
+
+    flex-shrink: 0;
+}
 
 }
 
@@ -858,7 +894,7 @@ grid-template-areas:
 }
 
 .hero-content{
-    padding:  20px 10px 20px 10px;
+    padding:  10px;
     width: 70%;
     
 }
@@ -955,23 +991,40 @@ header {
 
 
 
-    
-
-
     .cards{
 max-width:280px;
     height:350px;
   
 
 }
+.flexImage{
+    flex-direction: column;
+justify-content: flex-start;
+align-items: start;
+}
+.testimg2 img{
+width:80%;
+height:80%;
+}
+.bottom-left1{
+    padding:18px;
 
+
+}
+.imagediv img{
+    width:1400px;
+    height: 80px;
+    object-fit: contain;
+
+    flex-shrink: 0;
+}
 }
 
 
 @media (max-width:380px){
 
 .hero-section{
-        padding:  70px 30px 0 30px;
+        padding:  40px 30px 40px 30px;
 
 }
     .videoInfo-gridconatiner {
@@ -1002,7 +1055,7 @@ max-width:280px;
 
 
     .btmText{
-    font-size:40px ;
+    font-size:36px ;
    }
 
     
@@ -1013,6 +1066,14 @@ max-width:280px;
     height:350px;
   
 
+}
+
+.imagediv img{
+    width:1200px;
+    height: 80px;
+    object-fit: contain;
+
+    flex-shrink: 0;
 }
 
 }
