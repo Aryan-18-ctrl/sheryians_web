@@ -745,7 +745,7 @@ grid-template-areas:
 
    }
  .hero-content  h1{
-    font-size: 52px;
+    font-size: 56px;
 
    }
 
@@ -792,7 +792,7 @@ font-size: 40px;
 
   
  .hero-content  h1{
-    font-size: 42px;
+    font-size: 48px;
 width: 100%;;
    }
 
@@ -894,12 +894,12 @@ grid-template-areas:
 }
 
 .hero-content{
-    padding:  10px;
+    padding:  5px;
     width: 70%;
     
 }
 .hero-content h1{
-    font-size: 32px;
+    font-size: 38px;
 }
 
 .hero-content h1 .box{
@@ -938,13 +938,17 @@ header {
     font-size:28px;
 }
 
+.cardHead h2 {
+    font-size: 30px;
+}
+
 }
 
 
 @media (max-width:450px){
 
 .hero-section{
-        padding:  60px 10px 0 10px;
+        padding: 0 10px  ;
 
 }
     .videoInfo-gridconatiner {
@@ -955,7 +959,7 @@ header {
   
         header {
 
-    height: 75px;
+    height: 76px;
     
 }
 .ri-menu-3-line{
@@ -978,10 +982,10 @@ header {
    }
 
     .btmText{
-    font-size:40px ;
+    font-size:32px ;
    }
    .hero-content h1{
-    font-size: 28px;
+    font-size: 30px;
     line-height: 45px;
 }
 
@@ -1018,13 +1022,17 @@ height:80%;
 
     flex-shrink: 0;
 }
+
+.cardHead h2 {
+    font-size: 28px;
+}
 }
 
 
-@media (max-width:380px){
+@media (max-width:360px){
 
 .hero-section{
-        padding:  40px 30px 40px 30px;
+    padding:20px  10px 10px  10px;
 
 }
     .videoInfo-gridconatiner {
@@ -1034,7 +1042,6 @@ height:80%;
 
   
         header {
-
     height: 75px;
     
 }
@@ -1055,7 +1062,7 @@ height:80%;
 
 
     .btmText{
-    font-size:36px ;
+    font-size:24px ;
    }
 
     
@@ -1074,6 +1081,10 @@ max-width:280px;
     object-fit: contain;
 
     flex-shrink: 0;
+}
+
+.cardHead h2 {
+    font-size: 26px;
 }
 
 }
